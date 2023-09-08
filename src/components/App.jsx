@@ -54,7 +54,7 @@ export const App = () => {
   return (
     <div>
       <Header>Phonebook</Header>
-      <ContactForm createContact={createContact} />
+      <ContactForm onSubmit={createContact} />
       <Header>Contacts</Header>
       <Filter value={filter} onChange={changeFilter} />
       <ContactList options={filteredContacts()} onDelete={deleteContact} />
